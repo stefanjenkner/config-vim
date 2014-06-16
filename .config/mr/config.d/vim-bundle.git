@@ -75,5 +75,9 @@ checkout = git clone 'https://github.com/godlygeek/tabular.git' 'tabular'
 push = :
 
 [.vim/bundle/nerdtree]
-checkout = git clone 'https://github.com/scrooloose/nerdtree' 'nerdtree'
+checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
+push = :
+
+[.vim/bundle/vim-gnupg]
+checkout = git clone 'https://github.com/jamessan/vim-gnupg.git' 'vim-gnupg'
 push = :
