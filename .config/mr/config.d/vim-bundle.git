@@ -1,0 +1,79 @@
+[.vim/bundle/vim-fugitive]
+checkout = git clone 'git://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
+push = :
+
+[.vim/bundle/vim-afterimage]
+checkout = git clone 'git://github.com/tpope/vim-afterimage.git' 'vim-afterimage'
+push = :
+
+[.vim/bundle/vim-classpath]
+checkout = git clone 'git://github.com/tpope/vim-classpath.git' 'vim-classpath'
+push = :
+
+[.vim/bundle/vim-endwise]
+checkout = git clone 'git://github.com/tpope/vim-endwise.git' 'vim-endwise'
+push = :
+
+[.vim/bundle/vim-fugitive]
+checkout = git clone 'git://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
+push = :
+
+[.vim/bundle/vim-jdaddy]
+checkout = git clone 'git://github.com/tpope/vim-jdaddy.git' 'vim-jdaddy'
+push = :
+
+[.vim/bundle/vim-liquid]
+checkout = git clone 'git://github.com/tpope/vim-liquid.git' 'vim-liquid'
+push = :
+
+[.vim/bundle/vim-markdown]
+checkout = git clone 'git://github.com/tpope/vim-markdown.git' 'vim-markdown'
+push = :
+
+[.vim/bundle/vim-repeat]
+checkout = git clone 'git://github.com/tpope/vim-repeat.git' 'vim-repeat'
+push = :
+
+[.vim/bundle/vim-rvm]
+checkout = git clone 'git://github.com/tpope/vim-rvm.git' 'vim-rvm'
+push = :
+
+[.vim/bundle/vim-sensible]
+checkout = git clone 'git://github.com/tpope/vim-sensible.git' 'vim-sensible'
+push = :
+
+[.vim/bundle/vim-speeddating]
+checkout = git clone 'git://github.com/tpope/vim-speeddating.git' 'vim-speeddating'
+push = :
+
+[.vim/bundle/vim-surround]
+checkout = git clone 'git://github.com/tpope/vim-surround.git' 'vim-surround'
+push = :
+
+[.vim/bundle/vim-vividchalk]
+checkout = git clone 'git://github.com/tpope/vim-vividchalk.git' 'vim-vividchalk'
+push = :
+
+#[.vim/bundle/vim-xpath]
+#checkout = git clone 'https://github.com/actionshrimp/vim-xpath.git' 'vim-xpath'
+#push = :
+
+[.vim/bundle/taskpaper.vim]
+checkout = git clone 'https://github.com/davidoc/taskpaper.vim.git' 'taskpaper.vim'
+push = :
+
+[.vim/bundle/vim-puppet]
+checkout = git clone 'https://github.com/rodjek/vim-puppet.git' 'vim-puppet'
+push = :
+
+[.vim/bundle/syntastic]
+checkout = git clone 'https://github.com/scrooloose/syntastic.git' 'syntastic'
+push = :
+
+[.vim/bundle/tabular]
+checkout = git clone 'https://github.com/godlygeek/tabular.git' 'tabular'
+push = :
+
+[.vim/bundle/nerdtree]
+checkout = git clone 'https://github.com/scrooloose/nerdtree' 'nerdtree'
+push = :
