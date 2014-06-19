@@ -81,3 +81,19 @@ push = :
 [.vim/bundle/vim-gnupg]
 checkout = git clone 'https://github.com/jamessan/vim-gnupg.git' 'vim-gnupg'
 push = :
+
+[.vim/bundle/gundo]
+checkout = git clone 'http://github.com/sjl/gundo.vim.git' 'gundo'
+push = :
+
+[.vim/bundle/jedi-vim]
+checkout = git clone 'https://github.com/davidhalter/jedi-vim.git' 'jedi-vim'
+push = :
+
+[.vim/bundle/jedi-vim/jedi]
+checkout = git clone 'https://github.com/davidhalter/jedi.git' 'jedi'
+push = :
+
+[.vim/bundle/supertab]
+checkout = git clone 'https://github.com/ervandew/supertab.git' 'supertab'
+push = :
