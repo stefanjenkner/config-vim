@@ -50,11 +50,11 @@ push = :
 checkout = git clone 'git://github.com/tpope/vim-vividchalk.git' 'vim-vividchalk'
 push = :
 
-#[.vim/bundle/vim-xpath]
-#checkout = git clone 'https://github.com/actionshrimp/vim-xpath.git' 'vim-xpath'
-#push = :
+[.vim/bundle/vim-xpath]
+checkout = git clone 'https://github.com/actionshrimp/vim-xpath.git' 'vim-xpath'
+push = :
 
-[.vim/bundle/taskpaper.vim]
+[.vim/bundle/taskpaper]
 checkout = git clone 'https://github.com/davidoc/taskpaper.vim.git' 'taskpaper.vim'
 push = :
 
@@ -100,4 +100,16 @@ push = :
 
 [.vim/bundle/LaTeX-Box]
 checkout = git clone 'git://github.com/LaTeX-Box-Team/LaTeX-Box.git' 'LaTeX-Box'
+push = :
+
+[.vim/bundle/vim-colors-solarized]
+checkout = git clone 'git://github.com/altercation/vim-colors-solarized.git' 'vim-colors-solarized'
+push = :
+
+[.vim/bundle/vim-unimpaired]
+checkout = git clone 'git://github.com/tpope/vim-unimpaired.git' 'vim-unimpaired'
+push = :
+
+[.vim/bundle/nerdcommenter]
+checkout = git clone 'https://github.com/scrooloose/nerdcommenter.git' 'nerdcommenter'
 push = :
