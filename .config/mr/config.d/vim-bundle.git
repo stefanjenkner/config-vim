@@ -55,7 +55,7 @@ checkout = git clone 'https://github.com/actionshrimp/vim-xpath.git' 'vim-xpath'
 push = :
 
 [.vim/bundle/taskpaper]
-checkout = git clone 'https://github.com/davidoc/taskpaper.vim.git' 'taskpaper.vim'
+checkout = git clone 'https://github.com/davidoc/taskpaper.vim.git' 'taskpaper'
 push = :
 
 [.vim/bundle/vim-puppet]
@@ -83,11 +83,8 @@ checkout = git clone 'http://github.com/sjl/gundo.vim.git' 'gundo'
 push = :
 
 [.vim/bundle/jedi-vim]
-checkout = git clone 'https://github.com/davidhalter/jedi-vim.git' 'jedi-vim'
-push = :
-
-[.vim/bundle/jedi-vim/jedi]
-checkout = git clone 'https://github.com/davidhalter/jedi.git' 'jedi'
+checkout = git clone --recursive 'https://github.com/davidhalter/jedi-vim.git' 'jedi-vim'
+update = git pull && git submodule update
 push = :
 
 [.vim/bundle/supertab]
