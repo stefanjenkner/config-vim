@@ -12,7 +12,12 @@ set nu
 "set wrap
 "set lbr
 "set showbreak=…
-set ts=4
+
+" Indent and tabs
+set smartindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
 
 set wildmenu
 "set wildmode=list:longest
