@@ -110,3 +110,7 @@ push = :
 [.vim/bundle/nerdcommenter]
 checkout = git clone 'https://github.com/scrooloose/nerdcommenter.git' 'nerdcommenter'
 push = :
+
+[.vim/bundle/Dockerfile]
+checkout = git clone 'https://github.com/ekalinin/Dockerfile.vim.git' 'Dockerfile'
+push = :
