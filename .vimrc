@@ -1,7 +1,8 @@
-execute pathogen#infect()
 " To disable plugins...
-"runtime! plugin/sensible.vim
-"runtime! plugin/vim-xpath
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'jedi-vim')
+"call add(g:pathogen_disabled, 'vim-xpath')
+execute pathogen#infect()
 
 filetype plugin indent on
 syntax on
