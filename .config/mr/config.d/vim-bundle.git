@@ -114,3 +114,19 @@ push = :
 [.vim/bundle/Dockerfile]
 checkout = git clone 'https://github.com/ekalinin/Dockerfile.vim.git' 'Dockerfile'
 push = :
+
+[.vim/bundle/vim-abolish]
+checkout = git clone 'https://github.com/tpope/vim-abolish.git' 'vim-abolish'
+push = :
+
+[.vim/bundle/vim-bundler]
+checkout = git clone 'https://github.com/tpope/vim-bundler.git' 'vim-bundler'
+push = :
+
+[.vim/bundle/vim-rails]
+checkout = git clone 'https://github.com/tpope/vim-rails' 'vim-rails'
+push = :
+
+[.vim/bundle/vim-rake]
+checkout = git clone 'https://github.com/tpope/vim-rake' 'vim-rake'
+push = :
