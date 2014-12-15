@@ -123,6 +123,14 @@ push = :
 checkout = git clone 'https://github.com/tpope/vim-bundler.git' 'vim-bundler'
 push = :
 
+[.vim/bundle/vim-dispatch]
+checkout = git clone 'https://github.com/tpope/vim-dispatch.git' 'vim-dispatch'
+push = :
+
+[.vim/bundle/vim-heroku]
+checkout = git clone 'https://github.com/tpope/vim-heroku.git' 'vim-heroku'
+push = :
+
 [.vim/bundle/vim-rails]
 checkout = git clone 'https://github.com/tpope/vim-rails' 'vim-rails'
 push = :
