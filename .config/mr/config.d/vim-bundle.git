@@ -132,9 +132,13 @@ checkout = git clone 'https://github.com/tpope/vim-heroku.git' 'vim-heroku'
 push = :
 
 [.vim/bundle/vim-rails]
-checkout = git clone 'https://github.com/tpope/vim-rails' 'vim-rails'
+checkout = git clone 'https://github.com/tpope/vim-rails.git' 'vim-rails'
+push = :
+
+[.vim/bundle/ctrlsf]
+checkout = git clone 'https://github.com/dyng/ctrlsf.vim.git' 'ctrlsf'
 push = :
 
 [.vim/bundle/vim-rake]
-checkout = git clone 'https://github.com/tpope/vim-rake' 'vim-rake'
+checkout = git clone 'https://github.com/tpope/vim-rake.git' 'vim-rake'
 push = :
