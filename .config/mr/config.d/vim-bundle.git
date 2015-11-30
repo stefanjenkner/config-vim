@@ -142,3 +142,8 @@ push = :
 [.vim/bundle/vim-rake]
 checkout = git clone 'https://github.com/tpope/vim-rake.git' 'vim-rake'
 push = :
+
+[.vim/bundle/ack.vim]
+checkout = git clone 'https://github.com/mileszs/ack.vim.git' 'ack.vim'
+push = :
+
