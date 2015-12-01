@@ -86,4 +86,9 @@ let g:task_paper_archive_project = "Archive"
 " archive on write
 autocmd BufWrite *.taskpaper call taskpaper#archive_done()
 
+" fzf - A command-line fuzzy finder written in Go
+if isdirectory("/usr/local/opt/fzf")
+  set rtp+=/usr/local/opt/fzf
+endif
+
 " vim: sw=2 ts=2
