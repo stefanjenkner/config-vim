@@ -91,4 +91,7 @@ if isdirectory("/usr/local/opt/fzf")
   set rtp+=/usr/local/opt/fzf
 endif
 
+" ignore files in NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$']
+
 " vim: sw=2 ts=2
