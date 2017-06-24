@@ -151,3 +151,7 @@ push = :
 checkout = git clone 'https://github.com/parkr/vim-jekyll.git' 'vim-jekyll'
 push = :
 
+[.vim/bundle/vim-flake8]
+checkout = git clone 'https://github.com/nvie/vim-flake8.git' 'vim-flake8'
+push = :
+
