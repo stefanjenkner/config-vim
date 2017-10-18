@@ -83,7 +83,7 @@ checkout = git clone 'https://github.com/jamessan/vim-gnupg.git' 'vim-gnupg'
 push = :
 
 [.vim/bundle/gundo]
-checkout = git clone 'http://github.com/sjl/gundo.vim.git' 'gundo'
+checkout = git clone 'https://github.com/sjl/gundo.vim.git' 'gundo'
 push = :
 
 [.vim/bundle/jedi-vim]
