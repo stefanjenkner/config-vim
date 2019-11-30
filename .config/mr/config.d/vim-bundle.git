@@ -2,10 +2,6 @@
 checkout = git clone 'https://github.com/itchyny/lightline.vim' 'lightline.vim'
 push = :
 
-[.vim/bundle/vim-fugitive]
-checkout = git clone 'https://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
-push = :
-
 [.vim/bundle/vim-endwise]
 checkout = git clone 'https://github.com/tpope/vim-endwise.git' 'vim-endwise'
 push = :
@@ -23,7 +19,7 @@ checkout = git clone 'https://github.com/tpope/vim-speeddating.git' 'vim-speedda
 push = :
 
 [.vim/bundle/vim-surround]
-checkout = git clone 'htts://github.com/tpope/vim-surround.git' 'vim-surround'
+checkout = git clone 'https://github.com/tpope/vim-surround.git' 'vim-surround'
 push = :
 
 [.vim/bundle/nerdtree]
