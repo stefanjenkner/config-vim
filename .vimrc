@@ -1,6 +1,5 @@
 " To disable plugins...
 let g:pathogen_disabled = []
-"call add(g:pathogen_disabled, 'vim-xpath')
 execute pathogen#infect()
 
 filetype plugin indent on
@@ -60,11 +59,6 @@ elseif $TERM_PROGRAM == "Apple_Terminal"
 endif
 set title
 
-" http://www.vim.org/scripts/script.php?script_id=3645
-"let g:GPGExecutable = 'gpg'
-"let g:GPGUseAgent = 1
-"let g:GPGPreferArmor = 1
-
 " Underline misspelled words
 hi clear SpellBad
 hi SpellBad cterm=underline
@@ -86,18 +80,9 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
-" https://github.com/actionshrimp/vim-xpath
-let g:skip_xpath = 1
-
 " Automatically position the cursor when editing email messages
 " http://vim.wikia.com/wiki/Automatically_position_the_cursor_when_editing_email_messages
 autocmd BufRead mutt* execute 'normal gg/\n\n\n^M2j'
-
-" TaskPaper 
-let g:task_paper_date_format = "%Y-%m-%dT%H:%M:%S%z"
-let g:task_paper_archive_project = "Archive"
-" archive on write
-autocmd BufWrite *.taskpaper call taskpaper#archive_done()
 
 " fzf - A command-line fuzzy finder written in Go
 if isdirectory("/usr/local/opt/fzf")
