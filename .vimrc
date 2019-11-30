@@ -1,6 +1,5 @@
 " To disable plugins...
 let g:pathogen_disabled = []
-call add(g:pathogen_disabled, 'jedi-vim')
 "call add(g:pathogen_disabled, 'vim-xpath')
 execute pathogen#infect()
 
@@ -33,6 +32,14 @@ set history=100
 set hlsearch
 set incsearch
 
+"" https://github.com/itchyny/lightline.vim
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+" no more '-- INSERT --' (which is now displayed in the statusline)
+set noshowmode
+
 " https://github.com/plasticboy/vim-markdown
 "let g:vim_markdown_folding_disabled=1
 "let g:vim_markdown_initial_foldlevel=1
@@ -45,7 +52,11 @@ set incsearch
 if $TERM_PROGRAM == "iTerm.app"
   set mouse=a
   set ttymouse=xterm2
-	set clipboard=autoselect
+  set clipboard=autoselect
+elseif $TERM_PROGRAM == "Apple_Terminal"
+  set mouse=a
+  set ttymouse=xterm2
+  set clipboard=autoselect
 endif
 set title
 
@@ -66,6 +77,8 @@ au BufNewFile,BufRead COMMIT_EDITMSG set spell spelllang=de,en
 set background=dark
 "set background=light
 if $TERM == "xterm-256color"
+  let g:solarized_termcolors=256
+elseif $TERM == "screen-256color"
   let g:solarized_termcolors=256
 endif
 "let g:solarized_termtrans=1
@@ -93,5 +106,6 @@ endif
 
 " ignore files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
+
 
 " vim: sw=2 ts=2
