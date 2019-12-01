@@ -1,5 +1,5 @@
 [.vim/bundle/lightline.vim]
-checkout = git clone 'https://github.com/itchyny/lightline.vim' 'lightline.vim'
+checkout = git clone 'https://github.com/itchyny/lightline.vim.git' 'lightline.vim'
 push = :
 
 [.vim/bundle/vim-endwise]
@@ -26,8 +26,8 @@ push = :
 checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
 push = :
 
-[.vim/bundle/gundo]
-checkout = git clone 'https://github.com/sjl/gundo.vim.git' 'gundo'
+[.vim/bundle/gundo.vim]
+checkout = git clone 'https://github.com/sjl/gundo.vim.git' 'gundo.vim'
 push = :
 
 [.vim/bundle/vim-colors-solarized]
@@ -38,8 +38,8 @@ push = :
 checkout = git clone 'https://github.com/tpope/vim-dispatch.git' 'vim-dispatch'
 push = :
 
-[.vim/bundle/ctrlsf]
-checkout = git clone 'https://github.com/dyng/ctrlsf.vim.git' 'ctrlsf'
+[.vim/bundle/ctrlsf.vim]
+checkout = git clone 'https://github.com/dyng/ctrlsf.vim.git' 'ctrlsf.vim'
 push = :
 
 [.vim/bundle/fzf.vim]
