@@ -84,7 +84,7 @@ colorscheme solarized
 " http://vim.wikia.com/wiki/Automatically_position_the_cursor_when_editing_email_messages
 autocmd BufRead mutt* execute 'normal gg/\n\n\n^M2j'
 
-" fzf - A command-line fuzzy finder written in Go
+" https://github.com/junegunn/fzf.vim
 if isdirectory("/usr/local/opt/fzf")
   set rtp+=/usr/local/opt/fzf
 endif
