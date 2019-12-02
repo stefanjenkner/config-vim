@@ -2,30 +2,28 @@
 let g:pathogen_disabled = []
 execute pathogen#infect()
 
+" Leader
+let mapleader = ","
+
+" Defaults everyone can agree on - https://github.com/tpope/vim-sensible
 filetype plugin indent on
 syntax on
-set modeline
-set nu
+set ruler
+set number
+set wildmenu
+set history=1000
+set visualbell
 
 " Line wrapping
 "set wrap
 "set lbr
 "set showbreak=…
 
-" Indent and tabs
-set smartindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
-
-set wildmenu
-"set wildmode=list:longest
-
-" Leader
-let mapleader = ","
-
-" Keep longer history
-set history=100
+" Heuristically set buffer options - https://github.com/tpope/vim-sleuth.git
+"set smartindent
+"set expandtab
+"set tabstop=8
+"set shiftwidth=8
 
 " Highlight search terms
 set hlsearch
@@ -36,6 +34,7 @@ set incsearch
 "let g:vim_markdown_initial_foldlevel=1
 
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
+set title
 "set ttyfast
 "set mouse=a
 "set ttymouse=xterm2
@@ -49,7 +48,6 @@ elseif $TERM_PROGRAM == "Apple_Terminal"
   set ttymouse=xterm2
   set clipboard=autoselect
 endif
-set title
 
 " Underline misspelled words
 hi clear SpellBad
@@ -74,7 +72,6 @@ colorscheme solarized
 call togglebg#map("<F5>")
 
 "" https://github.com/itchyny/lightline.vim
-set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }

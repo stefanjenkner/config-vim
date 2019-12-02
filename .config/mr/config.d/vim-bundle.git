@@ -50,4 +50,7 @@ push = :
 checkout = git clone 'https://github.com/hashivim/vim-terraform.git' 'vim-terraform'
 push = :
 
+[.vim/bundle/vim-sleuth]
+checkout = git clone 'https://github.com/tpope/vim-sleuth.git' 'vim-sleuth'
+push = :
 
