@@ -31,14 +31,6 @@ set history=100
 set hlsearch
 set incsearch
 
-"" https://github.com/itchyny/lightline.vim
-set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
-" no more '-- INSERT --' (which is now displayed in the statusline)
-set noshowmode
-
 " https://github.com/plasticboy/vim-markdown
 "let g:vim_markdown_folding_disabled=1
 "let g:vim_markdown_initial_foldlevel=1
@@ -75,10 +67,19 @@ if $TERM == "xterm-256color"
 elseif $TERM == "screen-256color"
   let g:solarized_termcolors=256
 endif
-"let g:solarized_termtrans=1
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
+let g:solarized_contrast="normal"
+let g:solarized_visibility="low"
 colorscheme solarized
+" toggle background dark/white
+call togglebg#map("<F5>")
+
+"" https://github.com/itchyny/lightline.vim
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+" no more '-- INSERT --' (which is now displayed in the statusline)
+set noshowmode
 
 " Automatically position the cursor when editing email messages
 " http://vim.wikia.com/wiki/Automatically_position_the_cursor_when_editing_email_messages
