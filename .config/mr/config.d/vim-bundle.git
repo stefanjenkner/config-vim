@@ -46,3 +46,8 @@ push = :
 checkout = git clone 'https://github.com/junegunn/fzf.vim.git' 'fzf.vim'
 push = :
 
+[.vim/bundle/vim-terraform]
+checkout = git clone 'https://github.com/hashivim/vim-terraform.git' 'vim-terraform'
+push = :
+
+
