@@ -58,8 +58,12 @@ hi SpellBad cterm=underline
 au BufNewFile,BufRead COMMIT_EDITMSG set spell spelllang=de,en
 
 " https://github.com/altercation/vim-colors-solarized
-set background=dark
-"set background=light
+"set background=dark
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
 if $TERM == "xterm-256color"
   let g:solarized_termcolors=256
 elseif $TERM == "screen-256color"
