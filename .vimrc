@@ -72,8 +72,20 @@ endif
 let g:solarized_contrast="normal"
 let g:solarized_visibility="low"
 colorscheme solarized
+
 " toggle background dark/white
 call togglebg#map("<F5>")
+
+" fix toggled ligthline/solarized status bar
+function! s:TogBGlightline()
+  execute 'source' globpath(&rtp, 'autoload/lightline/colorscheme/solarized.vim')
+  call lightline#init()
+  call lightline#colorscheme()
+  call lightline#update()
+endfunction
+if !exists(":ToggleBGlightline")
+  command ToggleBGlightline :call s:TogBGlightline()
+endif
 
 "" https://github.com/itchyny/lightline.vim
 let g:lightline = {
