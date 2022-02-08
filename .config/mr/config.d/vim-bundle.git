@@ -58,3 +58,11 @@ push = :
 checkout = git clone 'https://github.com/tpope/vim-sleuth.git' 'vim-sleuth'
 push = :
 
+[.vim/bundle/vim-taskpaper]
+checkout = git clone 'https://github.com/cweagans/vim-taskpaper.git' 'vim-taskpaper'
+push = :
+
+[.vim/bundle/ale]
+checkout = git clone 'https://github.com/dense-analysis/ale.git' 'ale'
+push = :
+
