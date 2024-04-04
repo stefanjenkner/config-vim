@@ -68,6 +68,8 @@ if $TERM == "xterm-256color"
   let g:solarized_termcolors=256
 elseif $TERM == "screen-256color"
   let g:solarized_termcolors=256
+elseif $TERM == "tmux-256color"
+  let g:solarized_termcolors=256
 endif
 let g:solarized_contrast="normal"
 let g:solarized_visibility="low"
