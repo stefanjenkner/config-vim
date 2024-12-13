@@ -66,3 +66,23 @@ push = :
 checkout = git clone 'https://github.com/dense-analysis/ale.git' 'ale'
 push = :
 
+[.vim/bundle/vim-ingo-library]
+checkout = git clone 'https://github.com/inkarkat/vim-ingo-library.git' 'vim-ingo-library'
+push = :
+
+[.vim/bundle/vim-EditSimilar]
+checkout = git clone 'https://github.com/inkarkat/vim-EditSimilar.git' 'vim-EditSimilar'
+push = :
+
+[.vim/bundle/vim-BufferPersist]
+checkout = git clone 'https://github.com/inkarkat/vim-BufferPersist.git' 'vim-BufferPersist'
+push = :
+
+[.vim/bundle/vim-MessageRecall]
+checkout = git clone 'https://github.com/inkarkat/vim-MessageRecall.git' 'vim-MessageRecall'
+push = :
+
+[.vim/bundle/vim-VcsMessageRecall]
+checkout = git clone 'https://github.com/inkarkat/vim-VcsMessageRecall.git' 'vim-VcsMessageRecall'
+push = :
+

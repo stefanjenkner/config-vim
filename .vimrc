@@ -108,5 +108,10 @@ endif
 " ignore files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
+" https://github.com/inkarkat/vim-VcsMessageRecall?tab=readme-ov-file#configuration
+let g:VcsMessageRecall_StoreDirName = 'commit-msgs'
+let g:VcsMessageRecall_git_MessageRecallOptions = {
+  \   'ignorePattern': "^Merge branch",
+  \ }
 
 " vim: sw=2 ts=2
