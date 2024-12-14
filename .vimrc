@@ -41,11 +41,11 @@ set title
 "set clipboard=autoselect
 if $TERM_PROGRAM == "iTerm.app"
   set mouse=a
-  set ttymouse=xterm2
+  set ttymouse=sgr
   set clipboard=autoselect
 elseif $TERM_PROGRAM == "Apple_Terminal"
   set mouse=a
-  set ttymouse=xterm2
+  set ttymouse=sgr
   set clipboard=autoselect
 endif
 
