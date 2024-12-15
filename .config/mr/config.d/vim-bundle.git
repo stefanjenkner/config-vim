@@ -42,6 +42,10 @@ push = :
 checkout = git clone 'https://github.com/dyng/ctrlsf.vim.git' 'ctrlsf.vim'
 push = :
 
+[.vim/bundle/fzf]
+checkout = git clone 'https://github.com/junegunn/fzf.git' 'fzf'
+push = :
+
 [.vim/bundle/fzf.vim]
 checkout = git clone 'https://github.com/junegunn/fzf.vim.git' 'fzf.vim'
 push = :

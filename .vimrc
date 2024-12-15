@@ -35,10 +35,6 @@ set incsearch
 
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
 set title
-"set ttyfast
-"set mouse=a
-"set ttymouse=xterm2
-"set clipboard=autoselect
 if $TERM_PROGRAM == "iTerm.app"
   set mouse=a
   set ttymouse=sgr
@@ -58,7 +54,6 @@ hi SpellBad cterm=underline
 au BufNewFile,BufRead COMMIT_EDITMSG set spell spelllang=de,en
 
 " https://github.com/altercation/vim-colors-solarized
-"set background=dark
 if has('gui_running')
   set background=light
 else
@@ -71,8 +66,6 @@ elseif $TERM == "screen-256color"
 elseif $TERM == "tmux-256color"
   let g:solarized_termcolors=256
 endif
-let g:solarized_contrast="normal"
-let g:solarized_visibility="low"
 colorscheme solarized
 
 " toggle background dark/white
@@ -100,12 +93,7 @@ set noshowmode
 " http://vim.wikia.com/wiki/Automatically_position_the_cursor_when_editing_email_messages
 autocmd BufRead mutt* execute 'normal gg/\n\n\n^M2j'
 
-" https://github.com/junegunn/fzf.vim
-if isdirectory("/usr/local/opt/fzf")
-  set rtp+=/usr/local/opt/fzf
-endif
-
-" ignore files in NERDTree
+" https://github.com/preservim/nerdtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 " https://github.com/inkarkat/vim-VcsMessageRecall?tab=readme-ov-file#configuration
@@ -113,5 +101,15 @@ let g:VcsMessageRecall_StoreDirName = 'commit-msgs'
 let g:VcsMessageRecall_git_MessageRecallOptions = {
   \   'ignorePattern': "^Merge branch",
   \ }
+
+" https://github.com/dense-analysis/ale
+let g:ale_linters = {
+\   'yaml.cloudformation': ['cfn-lint'],
+\   'python': ['ruff'],
+\}
+let g:ale_fixers = {
+\   'python': ['ruff'],
+\}
+let g:ale_fix_on_save = 0
 
 " vim: sw=2 ts=2
