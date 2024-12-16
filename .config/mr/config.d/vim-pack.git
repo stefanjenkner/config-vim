@@ -82,3 +82,6 @@ push = :
 checkout = git clone 'https://github.com/inkarkat/vim-VcsMessageRecall.git' 'vim-VcsMessageRecall'
 push = :
 
+[.vim/pack/foo/start/vim-eunuch]
+checkout = git clone 'https://github.com/tpope/vim-eunuch.git' 'vim-eunuch'
+push = :
