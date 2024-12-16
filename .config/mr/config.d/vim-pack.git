@@ -1,84 +1,84 @@
-[.vim/bundle/lightline.vim]
+[.vim/pack/foo/start/lightline.vim]
 checkout = git clone 'https://github.com/itchyny/lightline.vim.git' 'lightline.vim'
 push = :
 
-[.vim/bundle/vim-endwise]
+[.vim/pack/foo/start/vim-endwise]
 checkout = git clone 'https://github.com/tpope/vim-endwise.git' 'vim-endwise'
 push = :
 
-[.vim/bundle/vim-fugitive]
+[.vim/pack/foo/start/vim-fugitive]
 checkout = git clone 'https://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
 push = :
 
-[.vim/bundle/vim-sensible]
+[.vim/pack/foo/start/vim-sensible]
 checkout = git clone 'https://github.com/tpope/vim-sensible.git' 'vim-sensible'
 push = :
 
-[.vim/bundle/vim-speeddating]
+[.vim/pack/foo/start/vim-speeddating]
 checkout = git clone 'https://github.com/tpope/vim-speeddating.git' 'vim-speeddating'
 push = :
 
-[.vim/bundle/vim-surround]
+[.vim/pack/foo/start/vim-surround]
 checkout = git clone 'https://github.com/tpope/vim-surround.git' 'vim-surround'
 push = :
 
-[.vim/bundle/nerdtree]
+[.vim/pack/foo/start/nerdtree]
 checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
 push = :
 
-[.vim/bundle/vim-colors-solarized]
+[.vim/pack/foo/start/vim-colors-solarized]
 checkout = git clone 'https://github.com/altercation/vim-colors-solarized.git' 'vim-colors-solarized'
 push = :
 
-[.vim/bundle/vim-dispatch]
+[.vim/pack/foo/start/vim-dispatch]
 checkout = git clone 'https://github.com/tpope/vim-dispatch.git' 'vim-dispatch'
 push = :
 
-[.vim/bundle/ctrlsf.vim]
+[.vim/pack/foo/start/ctrlsf.vim]
 checkout = git clone 'https://github.com/dyng/ctrlsf.vim.git' 'ctrlsf.vim'
 push = :
 
-[.vim/bundle/fzf]
+[.vim/pack/foo/start/fzf]
 checkout = git clone 'https://github.com/junegunn/fzf.git' 'fzf'
 push = :
 
-[.vim/bundle/fzf.vim]
+[.vim/pack/foo/start/fzf.vim]
 checkout = git clone 'https://github.com/junegunn/fzf.vim.git' 'fzf.vim'
 push = :
 
-[.vim/bundle/vim-terraform]
+[.vim/pack/foo/start/vim-terraform]
 checkout = git clone 'https://github.com/hashivim/vim-terraform.git' 'vim-terraform'
 push = :
 
-[.vim/bundle/vim-sleuth]
+[.vim/pack/foo/start/vim-sleuth]
 checkout = git clone 'https://github.com/tpope/vim-sleuth.git' 'vim-sleuth'
 push = :
 
-[.vim/bundle/vim-taskpaper]
+[.vim/pack/foo/start/vim-taskpaper]
 checkout = git clone 'https://github.com/cweagans/vim-taskpaper.git' 'vim-taskpaper'
 push = :
 
-[.vim/bundle/ale]
+[.vim/pack/foo/start/ale]
 checkout = git clone 'https://github.com/dense-analysis/ale.git' 'ale'
 push = :
 
-[.vim/bundle/vim-ingo-library]
+[.vim/pack/foo/start/vim-ingo-library]
 checkout = git clone 'https://github.com/inkarkat/vim-ingo-library.git' 'vim-ingo-library'
 push = :
 
-[.vim/bundle/vim-EditSimilar]
+[.vim/pack/foo/start/vim-EditSimilar]
 checkout = git clone 'https://github.com/inkarkat/vim-EditSimilar.git' 'vim-EditSimilar'
 push = :
 
-[.vim/bundle/vim-BufferPersist]
+[.vim/pack/foo/start/vim-BufferPersist]
 checkout = git clone 'https://github.com/inkarkat/vim-BufferPersist.git' 'vim-BufferPersist'
 push = :
 
-[.vim/bundle/vim-MessageRecall]
+[.vim/pack/foo/start/vim-MessageRecall]
 checkout = git clone 'https://github.com/inkarkat/vim-MessageRecall.git' 'vim-MessageRecall'
 push = :
 
-[.vim/bundle/vim-VcsMessageRecall]
+[.vim/pack/foo/start/vim-VcsMessageRecall]
 checkout = git clone 'https://github.com/inkarkat/vim-VcsMessageRecall.git' 'vim-VcsMessageRecall'
 push = :
 

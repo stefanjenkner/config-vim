@@ -1,7 +1,3 @@
-" https://github.com/tpope/vim-pathogen
-let g:pathogen_disabled = []
-execute pathogen#infect()
-
 " Leader
 let mapleader = ","
 
