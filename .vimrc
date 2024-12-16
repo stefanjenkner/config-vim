@@ -1,11 +1,12 @@
-" To disable plugins...
+" https://github.com/tpope/vim-pathogen
 let g:pathogen_disabled = []
 execute pathogen#infect()
 
 " Leader
 let mapleader = ","
 
-" Defaults everyone can agree on - https://github.com/tpope/vim-sensible
+" https://github.com/tpope/vim-sensible
+" Defaults everyone can agree on, plus...
 filetype plugin indent on
 syntax on
 set ruler
@@ -13,25 +14,8 @@ set number
 set wildmenu
 set history=1000
 set visualbell
-
-" Line wrapping
-"set wrap
-"set lbr
-"set showbreak=…
-
-" Heuristically set buffer options - https://github.com/tpope/vim-sleuth.git
-"set smartindent
-"set expandtab
-"set tabstop=8
-"set shiftwidth=8
-
-" Highlight search terms
 set hlsearch
 set incsearch
-
-" https://github.com/plasticboy/vim-markdown
-"let g:vim_markdown_folding_disabled=1
-"let g:vim_markdown_initial_foldlevel=1
 
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
 set title
@@ -84,8 +68,8 @@ endif
 
 "" https://github.com/itchyny/lightline.vim
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
+\   'colorscheme': 'solarized',
+\}
 " no more '-- INSERT --' (which is now displayed in the statusline)
 set noshowmode
 
@@ -96,11 +80,11 @@ autocmd BufRead mutt* execute 'normal gg/\n\n\n^M2j'
 " https://github.com/preservim/nerdtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
-" https://github.com/inkarkat/vim-VcsMessageRecall?tab=readme-ov-file#configuration
+" https://github.com/inkarkat/vim-VcsMessageRecall
 let g:VcsMessageRecall_StoreDirName = 'commit-msgs'
 let g:VcsMessageRecall_git_MessageRecallOptions = {
-  \   'ignorePattern': "^Merge branch",
-  \ }
+\   'ignorePattern': "^Merge branch",
+\}
 
 " https://github.com/dense-analysis/ale
 let g:ale_linters = {

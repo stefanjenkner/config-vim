@@ -26,10 +26,6 @@ push = :
 checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
 push = :
 
-[.vim/bundle/gundo.vim]
-checkout = git clone 'https://github.com/sjl/gundo.vim.git' 'gundo.vim'
-push = :
-
 [.vim/bundle/vim-colors-solarized]
 checkout = git clone 'https://github.com/altercation/vim-colors-solarized.git' 'vim-colors-solarized'
 push = :
@@ -52,10 +48,6 @@ push = :
 
 [.vim/bundle/vim-terraform]
 checkout = git clone 'https://github.com/hashivim/vim-terraform.git' 'vim-terraform'
-push = :
-
-[.vim/bundle/vim-markdown]
-checkout = git clone 'https://github.com/tpope/vim-markdown.git' 'vim-markdown'
 push = :
 
 [.vim/bundle/vim-sleuth]
