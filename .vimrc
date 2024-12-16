@@ -13,6 +13,9 @@ set visualbell
 set hlsearch
 set incsearch
 
+" built-in comment plugin
+packadd! comment
+
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
 set title
 if $TERM_PROGRAM == "iTerm.app"
