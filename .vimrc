@@ -26,6 +26,12 @@ elseif $TERM_PROGRAM == "Apple_Terminal"
   set mouse=a
   set ttymouse=sgr
   set clipboard=autoselect
+elseif $TERM == "xterm-256color"
+  set mouse=a
+  set ttymouse=sgr
+elseif $TERM == "tmux-256color"
+  set mouse=a
+  set ttymouse=xterm2
 endif
 
 " underline misspelled words
