@@ -1,8 +1,7 @@
-" Leader
+" leader
 let mapleader = ","
 
-" https://github.com/tpope/vim-sensible
-" Defaults everyone can agree on, plus...
+" https://github.com/tpope/vim-sensible - defaults everyone can agree on, plus...
 filetype plugin indent on
 syntax on
 set ruler
@@ -12,6 +11,7 @@ set history=1000
 set visualbell
 set hlsearch
 set incsearch
+set noshowmode
 
 " built-in comment plugin
 packadd! comment
@@ -28,53 +28,48 @@ elseif $TERM_PROGRAM == "Apple_Terminal"
   set clipboard=autoselect
 endif
 
-" Underline misspelled words
+" underline misspelled words
 hi clear SpellBad
 hi SpellBad cterm=underline
-
-" To spell check all git commit messages
-" https://coderwall.com/p/a8akca
+" to spell check all git commit messages
 au BufNewFile,BufRead COMMIT_EDITMSG set spell spelllang=de,en
 
-" https://github.com/altercation/vim-colors-solarized
+" https://github.com/lifepillar/vim-solarized8
 if has('gui_running')
   set background=light
 else
   set background=dark
 endif
-if $TERM == "xterm-256color"
-  let g:solarized_termcolors=256
-elseif $TERM == "screen-256color"
-  let g:solarized_termcolors=256
-elseif $TERM == "tmux-256color"
-  let g:solarized_termcolors=256
-endif
-colorscheme solarized
+let g:solarized_statusline = "normal"
+" let g:solarized_statusline = "low"
+" let g:solarized_statusline = "flat"
+let g:solarized_italics = 1
+let g:solarized_visibility = "normal"
+" let g:solarized_visibility = "low"
+" let g:solarized_visibility = "high"
+" autocmd vimenter * ++nested colorscheme solarized8_high
+autocmd vimenter * ++nested colorscheme solarized8
+" autocmd vimenter * ++nested colorscheme solarized8_low
+" autocmd vimenter * ++nested colorscheme solarized8_flat
 
 " toggle background dark/white
-call togglebg#map("<F5>")
-
-" fix toggled ligthline/solarized status bar
-function! s:TogBGlightline()
+function! ToggleBackground()
+  if &background == "dark"
+    set background=light
+  else
+    set background=dark
+  endif
   execute 'source' globpath(&rtp, 'autoload/lightline/colorscheme/solarized.vim')
   call lightline#init()
   call lightline#colorscheme()
   call lightline#update()
 endfunction
-if !exists(":ToggleBGlightline")
-  command ToggleBGlightline :call s:TogBGlightline()
-endif
+map <F5> :call ToggleBackground()<CR>
 
 "" https://github.com/itchyny/lightline.vim
 let g:lightline = {
 \   'colorscheme': 'solarized',
 \}
-" no more '-- INSERT --' (which is now displayed in the statusline)
-set noshowmode
-
-" Automatically position the cursor when editing email messages
-" http://vim.wikia.com/wiki/Automatically_position_the_cursor_when_editing_email_messages
-autocmd BufRead mutt* execute 'normal gg/\n\n\n^M2j'
 
 " https://github.com/preservim/nerdtree
 let NERDTreeIgnore=['\.pyc$', '\~$']

@@ -26,8 +26,8 @@ push = :
 checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
 push = :
 
-[.vim/pack/foo/start/vim-colors-solarized]
-checkout = git clone 'https://github.com/altercation/vim-colors-solarized.git' 'vim-colors-solarized'
+[.vim/pack/foo/start/vim-solarized8]
+checkout = git clone 'https://github.com/lifepillar/vim-solarized8.git' 'vim-solarized8'
 push = :
 
 [.vim/pack/foo/start/vim-dispatch]
