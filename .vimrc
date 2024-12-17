@@ -88,12 +88,18 @@ let g:VcsMessageRecall_git_MessageRecallOptions = {
 
 " https://github.com/dense-analysis/ale
 let g:ale_linters = {
-\   'yaml.cloudformation': ['cfn-lint'],
+\   'markdown': ['vale'],
 \   'python': ['ruff'],
+\   'yaml.cloudformation': ['cfn-lint'],
 \}
 let g:ale_fixers = {
 \   'python': ['ruff'],
 \}
+let g:ale_type_map = {
+\   'vale': {'ES': 'WS', 'suggestion': 'I'},
+\}
 let g:ale_fix_on_save = 0
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
 
 " vim: sw=2 ts=2
