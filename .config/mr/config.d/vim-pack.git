@@ -85,3 +85,7 @@ push = :
 [.vim/pack/foo/start/vim-eunuch]
 checkout = git clone 'https://github.com/tpope/vim-eunuch.git' 'vim-eunuch'
 push = :
+
+[.vim/pack/foo/start/vim-lsp]
+checkout = git clone 'https://github.com/prabirshrestha/vim-lsp.git' 'vim-lsp'
+push = :

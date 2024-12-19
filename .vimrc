@@ -12,6 +12,7 @@ set visualbell
 set hlsearch
 set incsearch
 set noshowmode
+set completeopt=menu,menuone,noselect
 
 " built-in comment plugin
 packadd! comment
@@ -93,6 +94,7 @@ let g:ale_linters = {
 \   'yaml.cloudformation': ['cfn-lint'],
 \}
 let g:ale_fixers = {
+\   'markdown': ['vale'],
 \   'python': ['ruff'],
 \}
 let g:ale_type_map = {
@@ -101,5 +103,43 @@ let g:ale_type_map = {
 let g:ale_fix_on_save = 0
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
+
+" https://github.com/prabirshrestha/vim-lsp
+function! s:on_lsp_buffer_enabled() abort
+  setlocal omnifunc=lsp#complete
+  nmap <buffer> gd <plug>(lsp-definition)
+  nmap <buffer> gr <plug>(lsp-references)
+  nmap <buffer> K <plug>(lsp-hover)
+endfunction
+if executable('vale-ls')
+  au User lsp_setup call lsp#register_server({
+    \ 'name': 'vale-ls',
+    \ 'cmd': {server_info->['vale-ls']},
+    \ 'whitelist': ['markdown', 'text'],
+    \})
+endif
+if executable('pylsp')
+  au User lsp_setup call lsp#register_server({
+    \ 'name': 'pylsp',
+    \ 'cmd': {server_info->['pylsp']},
+    \ 'allowlist': ['python'],
+    \ 'workspace_config': {
+    \   'pylsp': {
+    \     'plugins': {
+    \       'ruff': {
+    \         'enabled': v:true,
+    \         'config': 'pyproject.toml'
+    \       },
+    \       'pycodestyle': {'enabled': v:false},
+    \       'pyflakes': {'enabled': v:false},
+    \       'mccabe': {'enabled': v:false},
+    \       'pylint': {'enabled': v:false}
+    \     }
+    \   }
+    \ }
+    \})
+endif
+" disable diagnostics support (handled by ALE)
+let g:lsp_diagnostics_enabled = 0
 
 " vim: sw=2 ts=2
