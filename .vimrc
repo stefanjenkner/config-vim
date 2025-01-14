@@ -41,41 +41,16 @@ hi SpellBad cterm=underline
 " to spell check all git commit messages
 au BufNewFile,BufRead COMMIT_EDITMSG set spell spelllang=de,en
 
-" https://github.com/lifepillar/vim-solarized8
-if has('gui_running')
-  set background=light
-else
-  set background=dark
+" https://draculatheme.com/vim
+if v:version < 802
+  packadd! dracula
 endif
-let g:solarized_statusline = "normal"
-" let g:solarized_statusline = "low"
-" let g:solarized_statusline = "flat"
-let g:solarized_italics = 1
-let g:solarized_visibility = "normal"
-" let g:solarized_visibility = "low"
-" let g:solarized_visibility = "high"
-" autocmd vimenter * ++nested colorscheme solarized8_high
-autocmd vimenter * ++nested colorscheme solarized8
-" autocmd vimenter * ++nested colorscheme solarized8_low
-" autocmd vimenter * ++nested colorscheme solarized8_flat
+syntax enable
+colorscheme dracula
 
-" toggle background dark/white
-function! ToggleBackground()
-  if &background == "dark"
-    set background=light
-  else
-    set background=dark
-  endif
-  execute 'source' globpath(&rtp, 'autoload/lightline/colorscheme/solarized.vim')
-  call lightline#init()
-  call lightline#colorscheme()
-  call lightline#update()
-endfunction
-map <F5> :call ToggleBackground()<CR>
-
-"" https://github.com/itchyny/lightline.vim
+" https://github.com/itchyny/lightline.vim
 let g:lightline = {
-\   'colorscheme': 'solarized',
+\   'colorscheme': 'dracula',
 \}
 
 " https://github.com/preservim/nerdtree
