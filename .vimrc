@@ -42,9 +42,7 @@ hi SpellBad cterm=underline
 au BufNewFile,BufRead COMMIT_EDITMSG set spell spelllang=de,en
 
 " https://draculatheme.com/vim
-if v:version < 802
-  packadd! dracula
-endif
+packadd! dracula
 syntax enable
 colorscheme dracula
 
